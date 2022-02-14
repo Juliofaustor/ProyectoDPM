@@ -95,7 +95,7 @@ class FinUso : AppCompatActivity() {
         title = "Reg. Fin de Uso"
 
         dbF.collection("users").document(correo).get().addOnSuccessListener {
-            lblUsuario.setText("Bienvenido(a) " + it.get("nombreC") as String?)
+            lblUsuario.setText("Bienvenido(a)" + it.get("nombreC") as String?)
         }
 
         val sdf = SimpleDateFormat("dd/MM/yyyy HH:mm:ss")

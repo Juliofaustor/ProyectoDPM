@@ -40,6 +40,7 @@ class ListaReg : AppCompatActivity() {
         var preferencias = getSharedPreferences("sesion", Context.MODE_PRIVATE)
         asignarReferencias()
         Configuracion()
+        // cargando datos del correo
         cargarDatos(preferencias.getString("correo","").toString())
     }
 

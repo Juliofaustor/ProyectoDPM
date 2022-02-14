@@ -20,12 +20,15 @@ class Inicio : AppCompatActivity() {
     }
 
     private fun AsignarReferencias() {
+        // Asignar referencias
         btnLogout = findViewById(R.id.btnLogout)
         btnRegPreUso = findViewById(R.id.btnRegPreUso)
         btnRegUso = findViewById(R.id.btnRegUso)
     }
 
     private fun Configuracion() {
+
+        // configurando
         btnLogout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
